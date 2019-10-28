@@ -1,0 +1,48 @@
+{
+  "name": "@ainuo5213/github",
+  "version": "1.0.0",
+  "description": "github project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js",
+    "build": "next build && npm run start",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "export": "next export",
+    "analyze": "cross-env BUNDLE_ANALYZE=both next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+  },
+  "author": "annuo5213",
+  "repository": "https://github.com/ainuo5213/github.git",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.23.5",
+    "atob": "^2.1.2",
+    "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.2",
+    "cross-env": "^6.0.3",
+    "github-markdown-css": "^3.0.1",
+    "ioredis": "^4.14.1",
+    "koa": "^2.8.2",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.3",
+    "lru-cache": "^5.1.1",
+    "markdown-it": "^10.0.0",
+    "moment": "^2.24.0",
+    "next": "^8.0.3",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6"
+  }
+}
